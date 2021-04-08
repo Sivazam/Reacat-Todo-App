@@ -2,6 +2,7 @@ import React from 'react'
 import TaskBlock from "./TaskBlock"
 
 function List({items, setitems, Split}) {
+
     return (
         <div className ="MainContainer">
             <div className = "taskList">

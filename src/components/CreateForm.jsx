@@ -25,7 +25,8 @@ setCheck(e.target.value);
 
 function submitButton(e)
 {
-    // if(!e.text || /^\s*$/.test(e.text)){
+    // if(!input || /^\s*$/.test(input))
+    // {
     //     return;
     // }
     
@@ -46,8 +47,8 @@ return(
     <div>
         
         <form className = "inputForm" >
-<input className = "input" type= "text" onChange ={handleChange} name = "input" autoComplete = "off" value={input} placeholder = "Enter here"  ref= {autocursor}/>
-<button onClick = {submitButton} className = "formbutton"> <i className = "fas fa-plus-square"> </i> </button>
+<input className = "input" type= "text" onChange ={handleChange} name = "input" autoComplete = "off" value={input} placeholder = "Enter here"  ref= {autocursor} formNoValidate/>
+<button onClick = {e => submitButton(e)} className = "formbutton" > <i className = "fas fa-plus-square"> </i> </button>
 
 <span className = "choice" >
 <select  className ="category" onChange = {categoryCheck}>

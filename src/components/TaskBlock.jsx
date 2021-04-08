@@ -1,6 +1,7 @@
 import React from 'react'
 
-function TaskBlock({items, item, setitems, text}) {
+
+function TaskBlock({items, item, setitems, text, handleCheckbox}) {
 
     const Completed = (e) =>
     {
@@ -44,11 +45,13 @@ function TaskBlock({items, item, setitems, text}) {
 
 
     return (
-        <div>
-            
+        <div className = "todoBlock">
+            <input className ="checkBox" type="checkbox"   onChange ={() => Completed(item)} checked ={item.comppleted}></input>
            <span className =  {item.completed ? "complete" : "block "} >{text}</span>
-                       <button className = "CompBtn"onClick ={e => Completed(e)}>comp</button>
-                       <button className = "delete"  onClick ={e => deleteIt(e)} >Delete</button>
+           <span className = "buttons">
+                       
+                       <button className = "delete"  onClick ={e => deleteIt(e)} >Remove</button>
+                       </span>
         </div>
     )
 }

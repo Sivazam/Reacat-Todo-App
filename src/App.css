@@ -4,30 +4,29 @@
 
 }
 
-html{
-    background-color:cornsilk;
-
-}
 .MainContainer
 
 {
-background: white;
-padding-top: 10px ;
+/* background: #12343b; */
+padding-top: 25px;
+padding-bottom: 80px;
 width: 100%;
 min-height: 100vh;
-display: flex;
+
 justify-content: center;
 align-items: center;
 }
 body
 {
  
-    background-image: linear-gradient(120deg, #bfcba8 0%, #1b1717 );
+    /* background-image: linear-gradient(120deg, #bfcba8 0%, #1b1717 ); */
+    background-color: black;
     color: white;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: "Poppins", sans-serif;
-    min-height: 100vh;
- 
+    min-height: 100vh; 
 text-align: center;
 }
 .header
@@ -39,19 +38,30 @@ h1
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     color:#fff;
+    padding-bottom: 40px;
     margin : 30px, 0;
     
+}
+h1:hover{
+  color: dimgrey;
 }
 
 
 
 .complete
 {
-  
+  color:rgb(24, 19, 19);
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 50px;
 text-decoration-style: solid;
 text-decoration-line : line-through;
-text-decoration-color: #ff6c6c;
+text-decoration-color: #e20b0b;
   opacity: 1;
+  
+  text-align-last: left;
+  padding-right: 50px;
+  min-width: 175px;
 }
 .text
 {
@@ -68,11 +78,11 @@ text-decoration-color: #ff6c6c;
 
 .input
 {
-  font-size: 20px;
-  width: 260px;
+  font-size: 15px;
+  width: 200px;
   border : 1px solid #c89666;
   outline: none;
-  padding: 15px;
+  padding: 12px;
   
   margin-right: 25px;
   color: #ccc;
@@ -82,12 +92,34 @@ text-decoration-color: #ff6c6c;
 
 .formbutton
 {
-  width: 50px;
-  height: 50px;;
+  width: 40px;
+  height: 35px;;
   padding:15px, 15px;
-  font-size:  20px;
+  
+  font-size:  15px;
   border: 0;
-  background-color:#317a88;
+  background-color: white;
+  cursor: pointer;
+}
+.formbutton:hover {
+  color:darkslategrey;
+  font-size: 18px;
+
+}
+
+.category
+{
+  border-radius: 5px;
+  height: 35px;
+  color: white;
+  background-color: #1b2021;
+  margin-left: 10px;
+}
+.category:hover
+{
+  background-color: rgb(71, 61, 61);
+  color:honeydew;
+
 }
 
 .list
@@ -96,8 +128,84 @@ text-decoration-color: #ff6c6c;
   min-width: 50px;
   min-height: 10px;
   padding: 50px;
+
   box-sizing: border-box;
   border-radius: 10px;
   margin-bottom: 10px;box-shadow: 3px,6px,40px, #000;
   ;
 }
+
+.todoBlock
+{
+  display: flex;
+  margin-bottom: 10px;
+  margin: 20px, 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 30px;
+ 
+
+}
+
+.CompBtn,.delete
+{
+border:none;
+outline: none;
+cursor: pointer;
+color: teal;
+background-color:white;
+font-size: 19px;
+/* border-radius: 50%; */
+align-content: flex-end;
+font-family:Georgia, 'Times New Roman', Times, serif;
+border-radius: 5px;
+padding: 10px,10px,5px,5px;
+background: transparent;
+
+
+
+
+}
+.delete
+{
+  margin : 5px;
+  color: rgb(184, 23, 23);
+}
+
+
+.buttons
+{
+align-items:flex-end;
+}
+
+/* 
+.CompBtn
+{
+  color: rgb(42, 179, 42);
+    margin-right: 10px;
+} */
+
+.block
+{
+  color:rgb(2, 1, 1);
+  font-size: 20px;
+  font-family:cursive;
+  text-align-last: left;
+  padding-right: 50px;
+  min-width: 175px;
+}
+
+.inputForm
+
+{
+  padding: 20px;
+}
+
+.checkBox
+{
+  margin : 10px;
+  padding-left: 20px;
+  background-color: red;
+}
+
